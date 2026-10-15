@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Documentos, recursos e información · Constructora Interurbana – Obra Pinto</title>
+<style>
+:root{
+  --primary:#2b3a5f; --primary-text:#ffffff; --accent:#22ab6a; --blue:#35528f;
+  --bg:#f3f6fa; --surface:#ffffff; --text:#1b2430; --muted:#566274; --border:#dde3ec; --tint:#eaf6f0;
+  --pdf:#c62828; --shadow:0 2px 6px rgba(43,58,95,.08),0 10px 24px rgba(43,58,95,.08);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --primary:#a9c0ec; --primary-text:#0f1b2b; --accent:#3dcb85; --blue:#a9c0ec;
+    --bg:#0f1620; --surface:#18212d; --text:#e8edf3; --muted:#a2aebd; --border:#2b3746; --tint:#1d3328;
+    --pdf:#ef7a7a; --shadow:0 2px 6px rgba(0,0,0,.4);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{background:var(--surface);border-bottom:1px solid var(--border)}
+header .wrap{padding-top:16px;padding-bottom:16px}
+.brand{display:flex;align-items:center;gap:14px;color:var(--primary);font-weight:800;letter-spacing:.05em;text-transform:uppercase;font-size:1.05rem;line-height:1.25}
+.brand small{display:block;font-weight:600;letter-spacing:.06em;color:var(--muted);font-size:.78rem;text-transform:none}
+.hero{background:linear-gradient(135deg,#2b3a5f 0%,#35528f 70%,#2f7f78 100%);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;bottom:-90px;width:300px;height:300px;border:34px solid rgba(34,171,106,.35);border-radius:6px;transform:rotate(12deg)}
+.hero .wrap{padding-top:44px;padding-bottom:48px;position:relative;z-index:1}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.14);border-radius:99px;padding:4px 14px;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+h1{margin:14px 0 8px;font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.15}
+.intro{margin:0 0 24px;font-size:1.1rem;opacity:.92}
+.search{position:relative;max-width:520px}
+.search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:#566274;pointer-events:none}
+.search input{width:100%;padding:15px 16px 15px 46px;font:inherit;color:#1b2430;background:#fff;border:2px solid transparent;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.search input:focus,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+main{padding-top:32px}
+.count{color:var(--muted);font-size:.9rem;margin:0 0 16px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));list-style:none;padding:0;margin:0}
+.card{background:var(--surface);border:1px solid var(--border);border-top:5px solid var(--accent);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px;height:100%;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-4px)}
+.icon-box{width:68px;height:68px;border-radius:16px;background:var(--tint);display:grid;place-items:center}
+.icon{width:44px;height:49px}
+.card h2{margin:0;font-size:1.15rem;color:var(--text);line-height:1.3}
+.card p{margin:0;color:var(--muted);flex:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none;background:var(--primary);color:var(--primary-text);border:2px solid var(--primary);font-size:.98rem;transition:filter .15s}
+.btn:hover{filter:brightness(1.12)}
+.soon{display:inline-flex;justify-content:center;padding:12px 18px;border-radius:10px;background:var(--bg);color:var(--muted);border:2px dashed var(--border);font-weight:700;font-size:.98rem}
+.empty{display:none;text-align:center;color:var(--muted);padding:40px 0}
+@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+footer{margin-top:56px;background:#2b3a5f;color:#fff;border-top:6px solid var(--accent)}
+footer .wrap{padding-top:32px;padding-bottom:32px;display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+footer h3{margin:0 0 4px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#7fdcaa}
+footer p{margin:0}
+footer a{color:#fff;font-weight:700}
+footer a:focus-visible{outline:3px solid #7fdcaa;outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand"><svg width="48" height="48" viewBox="0 0 60 60" aria-hidden="true"><defs><linearGradient id="lg" gradientUnits="userSpaceOnUse" x1="5" y1="55" x2="55" y2="5"><stop offset=".35" stop-color="#22ab6a"/><stop offset=".7" stop-color="#35528f"/></linearGradient></defs><path d="M5 55H23V30H37V55H55V5H5Z" fill="none" stroke="url(#lg)" stroke-width="6"/></svg><span>Constructora Interurbana<small>Lo hacemos posible</small></span></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Obra Pinto</span>
+    <h1>Documentos, recursos e informacion</h1>
+    <p class="intro">Consulta y descarga nuestros documentos en formato PDF.</p>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <label for="q" style="position:absolute;left:-9999px">Buscar documento por título</label>
+      <input id="q" type="search" placeholder="Buscar documento por título…" autocomplete="off">
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <p class="count" id="count" role="status" aria-live="polite"></p>
+  <ul class="grid" id="grid"></ul>
+  <p class="empty" id="empty">No se han encontrado documentos con ese título.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><h3>Empresa</h3><p><strong>Constructora Interurbana S.A.</strong></p></div>
+    <div><h3>Dirección</h3><p>Calle Musgo 2<br>CP 28023 – Madrid</p></div>
+    <div><h3>Teléfono</h3><p><a href="tel:+34913980160">913 980 160</a></p></div>
+  </div>
+</footer>
+
+<script>
+/* ====== EDITA AQUÍ: añade, modifica o elimina documentos ======
+   Deja url vacío ("") para mostrar «Próximamente» sin enlace. */
+const DOCS = [
+  { title:"Apertura del Centro de trabajo", description:"Comunicación de apertura del centro de trabajo de la obra.",
+    url:"https://drive.google.com/file/d/1l_OoFdQhQ28XZb9AsAhwIMKDfg0dVJKl/view?usp=drive_link" },
+  { title:"Plan de Seguridad y Salud en la Obra", description:"Plan de Seguridad y Salud aplicable a la obra.",
+    url:"https://drive.google.com/file/d/1s4Fi2KpgovtBESF8BMCH3sFZaLg6enKT/view?usp=drive_link" },
+  { title:"Politica", description:"Política de la empresa.",
+    url:"https://drive.google.com/file/d/10EAALf3sDhu0n28AupwgfWEQ_H48imRl/view?usp=drive_link" },
+  { title:"Mapa de procesos", description:"Representación de los procesos de la organización.",
+    url:"https://drive.google.com/file/d/1jHpotRt3Nwrto5l94Gv4exOdfLZH0vzf/view?usp=drive_link" },
+  { title:"Organigrama", description:"Estructura organizativa y responsables.",
+    url:"https://drive.google.com/file/d/1-hKfKXcZAbtfBnPQG9fAwbjne0keklpu/view?usp=drive_link" }
+];
+
+const ICON = '<svg class="icon" viewBox="0 0 52 58" aria-hidden="true"><path d="M10 2h24l12 12v39a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3z" fill="#fff" stroke="#c9d1de" stroke-width="2"/><path d="M34 2v9a3 3 0 0 0 3 3h9z" fill="#e3e8f0"/><rect x="13" y="18" width="18" height="3" rx="1.5" fill="#d5dbe6"/><rect x="13" y="24" width="26" height="3" rx="1.5" fill="#d5dbe6"/><rect x="2" y="33" width="36" height="17" rx="3.5" fill="#d32f2f"/><text x="20" y="46" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="13" letter-spacing=".6" fill="#fff" text-anchor="middle">PDF</text></svg>';
+const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const grid = document.getElementById('grid'), empty = document.getElementById('empty'), count = document.getElementById('count');
+function render(list){
+  grid.innerHTML = list.map(d=>{
+    const has = d.url && d.url.trim();
+    const action = has
+      ? `<a class="btn" href="${esc(d.url)}" target="_blank" rel="noopener noreferrer" aria-label="Ver PDF: ${esc(d.title)} (se abre en una pestaña nueva)">Ver PDF <span aria-hidden="true">↗</span></a>`
+      : `<span class="soon">Próximamente</span>`;
+    return `<li><article class="card"><div class="icon-box">${ICON}</div><h2>${esc(d.title)}</h2><p>${esc(d.description)}</p>${action}</article></li>`;
+  }).join('');
+  empty.style.display = list.length ? 'none' : 'block';
+  count.textContent = list.length + (list.length===1 ? ' documento' : ' documentos');
+}
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+document.getElementById('q').addEventListener('input',e=>{
+  const q = norm(e.target.value.trim());
+  render(DOCS.filter(d=>norm(d.title).includes(q)));
+});
+render(DOCS);
+</script>
+</body>
+</html>
